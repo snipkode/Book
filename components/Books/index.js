@@ -56,7 +56,7 @@ export default function Books(props) {
 
     const size = useWindowSize();
     return (
-        <HTMLFlipBook width={size.width < 968 ? size.width : size.width / 2} height={size.height < 968 ? 700 : '100vh'} size="fixed"
+        <HTMLFlipBook width={size.width < 968 ? size.width : size.width / 2} height={size.height < 968 ? size.height : '100vh'} size="fixed"
             minWidth={312}
             maxWidth={size.width}
             minHeight={size.height}
