@@ -35,9 +35,9 @@ const Page = forwardRef((props, ref) => {
         <div className={styles['flip-book']} ref={ref}>
             <div className={styles.page}>
                 <div className={styles['page-content']}>
-                    <h1 className={styles['page-header']}>
+                    <div className={styles['page-header']}>
                         Page Header
-                    </h1>
+                    </div>
                     <div className={styles['page-text']}>
                         {props.children}
                     </div>
@@ -56,7 +56,7 @@ export default function Books(props) {
 
     const size = useWindowSize();
     return (
-        <HTMLFlipBook width={size.width < 968 ? size.width : size.width / 2} height={size.height < 968 ? 700 : '100vh'} size="fixed" 
+        <HTMLFlipBook width={size.width < 968 ? size.width : size.width / 2} height={size.height < 968 ? 700 : '100vh'} size="fixed"
             minWidth={312}
             maxWidth={size.width}
             minHeight={size.height}
@@ -64,7 +64,9 @@ export default function Books(props) {
             maxShadowOpacity={0.5}
             showCover={false}>
             <Page number="1">
-                <img src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_960_720.jpg"  width="100%" height={200}/>
+                <div className={styles['page-image']}>
+                    <img src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_960_720.jpg" width="100%" height={200} />
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
@@ -82,9 +84,71 @@ export default function Books(props) {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
                 </p>
             </Page>
-            <Page number="2">Page text</Page>
-            <Page number="3">Page text</Page>
-            <Page number="4">Page text</Page>
+            <Page number="2">
+                <div className={styles['page-image']}>
+                    <img src="https://cdn.pixabay.com/photo/2018/05/22/14/00/girl-3421489_960_720.jpg" width="100%" height={200} />
+                </div>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+            </Page>
+            <Page number="3">
+                <div className={styles['page-image']}>
+                    <img src="https://cdn.pixabay.com/photo/2016/01/19/01/42/library-1147815_960_720.jpg" width="100%" height={200} />
+                </div>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+            </Page>
+            <Page number="4">
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+                <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
+                </p>
+
+            </Page>
         </HTMLFlipBook>
     );
 }
