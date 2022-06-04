@@ -14,10 +14,10 @@ export default function Home() {
           </div>
           <Swiper />
         </div>
-        <div className="section">
-          <h4>Trending Books</h4>
-        </div>
         <div className="section-content">
+          <div className="section">
+            <h4>Trending Books</h4>
+          </div>
           <Trending />
         </div>
       </div>

@@ -3,7 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 2rem;
-    margin-top: 3.5rem;
+    margin-top: 2.8rem;
 }
 .grid-item {
     width: 100%;
