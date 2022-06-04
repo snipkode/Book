@@ -79,13 +79,14 @@
 
 .form-input > input::placeholder {
     font-weight: 300;
-    color: var(--heading)
+    /* color: var(--heading); */
+    color: rgba(4, 4, 43, 0.44);
 }
 
 .form-input > input {
-    padding: 10px 15px;
-    border: 1px solid rgba(4, 4, 43, 0.44);
-    border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid rgba(4, 4, 43, 0.34);
+    border-radius: 15px;
     width: 100%;
     font-weight: 300;
     justify-self: flex-end;
@@ -94,9 +95,9 @@
 }
 
 .form-input > input:focus {
-    padding: 10px 15px;
+    padding: 8px 15px;
     outline: none;
-    border: 1px solid rgba(4, 4, 43, 0.44);
-    border-radius: 20px;
+    border: 1px solid rgba(4, 4, 43, 0.54);
+    border-radius: 15px;
     width: 100%;
 }
