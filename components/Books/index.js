@@ -65,7 +65,7 @@ export default function Books(props) {
             showCover={false}>
             <Page number="1">
                 <div className={styles['page-image']}>
-                    <img src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_960_720.jpg" width="100%" height={200} />
+                    <Image src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_960_720.jpg" height={200} width={500} layout="responsive" />
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
@@ -86,7 +86,7 @@ export default function Books(props) {
             </Page>
             <Page number="2">
                 <div className={styles['page-image']}>
-                    <img src="https://cdn.pixabay.com/photo/2018/05/22/14/00/girl-3421489_960_720.jpg" width="100%" height={200} />
+                    <Image src="https://cdn.pixabay.com/photo/2018/05/22/14/00/girl-3421489_960_720.jpg" height={200} width={500} layout="responsive" />
                 </div>
                 <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
@@ -115,7 +115,7 @@ export default function Books(props) {
             </Page>
             <Page number="3">
                 <div className={styles['page-image']}>
-                    <img src="https://cdn.pixabay.com/photo/2016/01/19/01/42/library-1147815_960_720.jpg" width="100%" height={200} />
+                    <Image src="https://cdn.pixabay.com/photo/2016/01/19/01/42/library-1147815_960_720.jpg" height={200} width={500} layout="responsive" />
                 </div>
                 <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, hic eligendi dignissimos exercitationem molestiae pariatur ipsum impedit culpa temporibus laboriosam rerum nisi, amet maxime. Nam nisi fugiat sint. Qui, facere?
