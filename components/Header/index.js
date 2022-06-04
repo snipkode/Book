@@ -11,8 +11,8 @@ export default function Header() {
                     <input type="text" placeholder="Cari..." />
                 </div>
                 <ul>
+                    <li>Beranda</li>
                     <li>Semua Buku</li>
-                    <li>Buku Gratis</li>
                     <li>Panduan</li>
                     <li>Tentang Kami</li>
                     <li>

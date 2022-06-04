@@ -14,7 +14,7 @@
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.2);
 }
 
-.header-menu > .logo {
+.header-menu > div.logo {
     width: 150px;
     cursor: pointer;
 }
@@ -44,7 +44,7 @@
 
 .header-menu > ul > li > button {
    color: white;
-   background: var(--heading);
+   background: var(--secondary);
    cursor: pointer;
    border-radius: 3px;
    border: none;
@@ -54,10 +54,10 @@
 }
 
 .header-menu > ul > li > button:hover {
-    background: var(--secondary);
+    background: var(--heading);
     width: 100px;
     color: white;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--heading);
     cursor: pointer;
     border-radius: 3px;
     border: none;
