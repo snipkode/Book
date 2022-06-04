@@ -1,9 +1,10 @@
 import Books from '../../components/Books';
+import Layout from '../../components/Layout'
 
 export default function preview() {
   return (
-    <div>
+    <Layout title="Books | Starlova Publishing">
         <Books/>
-    </div>
+    </Layout>
   )
 }

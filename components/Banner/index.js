@@ -19,9 +19,9 @@ export default function Banner() {
                     <Image src={StandImage} alt="stand" />
                 </div>
                 <div className="book-display">
-                    <Image src={Book1} width={200} height={250}/>
-                    <Image src={Book2} width={200} height={250}/>
-                    <Image src={Book3} width={200} height={250}/>
+                    <Image src={Book1} width={200} height={250} alt="image banner book"/>
+                    <Image src={Book2} width={200} height={250} alt="image banner book"/>
+                    <Image src={Book3} width={200} height={250} alt="image banner book"/>
                 </div>
             </div>
         </div>
