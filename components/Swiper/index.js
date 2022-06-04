@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={30}
         pagination={{
           clickable: true,
