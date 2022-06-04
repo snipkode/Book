@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 
 export default function preview() {
   return (
-    <Layout title="Books | Starlova Publishing">
+    <Layout title="Books Preview | Starlova Publishing">
         <Books/>
     </Layout>
   )
