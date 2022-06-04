@@ -5,7 +5,7 @@ export default function Header() {
         <header>
             <div className={styles["header-menu"]}>
                 <div className="logo">
-                    Starlova Publishing
+                    Starlova Publishing Platform
                 </div>
                 <div className={styles["form-input"]}>
                     <input type="text" placeholder="Cari..." />

@@ -9,4 +9,6 @@
     align-items: center;
     font-size: 12px;
     font-weight: 300;
+    position: sticky;
+    position: -webkit-sticky;
 }
