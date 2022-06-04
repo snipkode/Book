@@ -9,12 +9,12 @@ export default function Home() {
       <div className="content">
         <div className="section-content">
           <div className="section">
-            <h2>Premium Books</h2>
+            <h4>Premium Books</h4>
           </div>
           <Swiper />
         </div>
         <div className="section">
-          <h2>Trending Books</h2>
+          <h4>Trending Books</h4>
         </div>
         <div className="section-content">
           <Trending />
