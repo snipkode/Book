@@ -87,7 +87,7 @@ header {
 }
 
 .main-bg {
-  background: linear-gradient(40deg, rgba(252, 255, 239, 0) -5.57%, #E3F2CD 35.35%, #f4e8d7 62.99%, rgba(255, 247, 220, 0) 100.59%);
+  /* background: linear-gradient(40deg, rgba(252, 255, 239, 0) -5.57%, #E3F2CD 35.35%, #f4e8d7 62.99%, rgba(255, 247, 220, 0) 100.59%); */
 }
 
 footer {
