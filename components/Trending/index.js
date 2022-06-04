@@ -9,6 +9,8 @@ export default function Trending() {
         <div className={styles["grid-item"]}>1</div>
         <div className={styles["grid-item"]}>1</div>
         <div className={styles["grid-item"]}>1</div>
+        <div className={styles["grid-item"]}>1</div>
+        <div className={styles["grid-item"]}>1</div>
     </div>
   )
 }
