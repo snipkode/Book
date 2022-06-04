@@ -1,4 +1,5 @@
 import Layout from '../components/Layout'
+import Swiper from '../components/Swiper'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <Layout title="Home | Starlova Publishing">
        <div className="content">
          <div className="banner">
-           Banner
+           <Swiper />
          </div>
        </div>
     </Layout>
