@@ -62,7 +62,7 @@ a {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,6 +85,10 @@ header {
   background: white;
 }
 
+.main-bg {
+  background: linear-gradient(0deg, rgba(252, 255, 239, 0) -5.57%, #E3F2CD 35.35%, #DEF9E8 62.99%, rgba(255, 247, 220, 0) 100.59%);
+}
+
 footer {
   position: sticky;
   bottom: 0;
@@ -96,4 +100,14 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.bg-page {
+  background: white;
+  background: linear-gradient(180deg, white 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,0.024247198879551846) 100%);  
+}
+
+.bg-page-80 {
+  background: white;
+  background: linear-gradient(180deg, white 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.024247198879551846) 100%);  
 }

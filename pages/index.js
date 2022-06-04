@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <Layout title="Home | Starlova Publishing">
-      <div className="content">
+      <div className="content bg-page-80">
         <div className="section-content">
           <div className="section">
             <h4>Premium Books</h4>
