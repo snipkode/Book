@@ -1,3 +1,4 @@
+
 import Layout from '../components/Layout'
 import Swiper from '../components/Swiper'
 import Trending from '../components/Trending'
