@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ['cdn.pixabay.com'],
+    layoutRaw: true
   },
 }
 
