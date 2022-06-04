@@ -2,6 +2,7 @@
   --secondary: rgba(51, 168, 159, 1);
   --primary: #0c1334;
   --sidebar: rgba(251, 251, 251, 1);
+  --heading: #6f5532;
 }
 
 html,
@@ -82,11 +83,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 9999;
-  background: white;
+  background:white;
 }
 
 .main-bg {
-  background: linear-gradient(0deg, rgba(252, 255, 239, 0) -5.57%, #E3F2CD 35.35%, #DEF9E8 62.99%, rgba(255, 247, 220, 0) 100.59%);
+  background: linear-gradient(40deg, rgba(252, 255, 239, 0) -5.57%, #E3F2CD 35.35%, #f4e8d7 62.99%, rgba(255, 247, 220, 0) 100.59%);
 }
 
 footer {

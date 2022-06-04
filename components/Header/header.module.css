@@ -8,6 +8,7 @@
     position: -webkit-sticky;
     top: 0;
     font-weight: 300;
+    color: var(--heading);
     -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.2);
   -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.2);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.2);
@@ -15,7 +16,12 @@
 
 .header-menu > .logo {
     width: 150px;
-    color: var(--tosca)
+    cursor: pointer;
+}
+
+.header-menu > .logo:hover {
+    width: 150px;
+    color: var(--secondary);
 }
 
 .header-menu > ul {
@@ -30,9 +36,15 @@
     font-weight: 300;
 }
 
+.header-menu > ul li:hover {
+    cursor: pointer;
+    font-weight: 300;
+    color: var(--secondary);
+}
+
 .header-menu > ul > li > button {
    color: white;
-   background: var(--secondary);
+   background: var(--heading);
    cursor: pointer;
    border-radius: 3px;
    border: none;
@@ -42,10 +54,10 @@
 }
 
 .header-menu > ul > li > button:hover {
-    background: var(--primary);
+    background: var(--secondary);
     width: 100px;
     color: white;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     cursor: pointer;
     border-radius: 3px;
     border: none;
@@ -67,11 +79,12 @@
 
 .form-input > input::placeholder {
     font-weight: 300;
+    color: var(--heading)
 }
 
 .form-input > input {
     padding: 10px 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #f4e8d7;
     border-radius: 20px;
     width: 100%;
     font-weight: 300;
@@ -83,7 +96,7 @@
 .form-input > input:focus {
     padding: 10px 15px;
     outline: none;
-    border: 1px solid #ccc;
+    border: 1px solid #dacdbc;
     border-radius: 20px;
     width: 100%;
 }
