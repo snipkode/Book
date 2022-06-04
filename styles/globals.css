@@ -25,6 +25,10 @@ a {
   box-sizing: border-box;
 }
 
+.active {
+  color: var(--secondary);
+}
+
 .banner {
   display: flex;
   flex-direction: row;

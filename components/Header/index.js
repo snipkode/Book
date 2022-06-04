@@ -1,6 +1,9 @@
 import styles from './header.module.css';
+import Link from 'next/Link';
+import { useRouter } from "next/router";
 
 export default function Header() {
+    const router = useRouter();
     return (
         <header>
             <div className={styles["header-menu"]}>
@@ -11,10 +14,10 @@ export default function Header() {
                     <input type="text" placeholder="Cari..." />
                 </div>
                 <ul>
-                    <li>Beranda</li>
-                    <li>Semua Buku</li>
-                    <li>Panduan</li>
-                    <li>Tentang Kami</li>
+                    <li className={router.pathname == "/" ? "active" : ""}><Link href="/">Beranda</Link></li>
+                    <li className={router.pathname == "/books" ? "active" : ""}><Link href="/books">Semua Buku</Link></li>
+                    <li className={router.pathname == "/panduan" ? "active" : ""}><Link href="/panduan">Panduan</Link></li>
+                    <li className={router.pathname == "/tentang" ? "active" : ""}><Link href="/tentang">Tentang Kami</Link></li>
                     <li>
                         <button type="text" id="login-btn">Masuk</button>
                     </li>
