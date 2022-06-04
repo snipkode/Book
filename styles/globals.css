@@ -39,6 +39,16 @@ a {
   width: 50%;
 }
 
+.banner .right-menu  {
+  width: 50%;
+}
+
+.banner .right-menu .image-stand {
+  position: absolute;
+  margin-right: 1.7rem;
+  transform: translateY(45%);
+}
+
 .banner .left-menu .heading-banner > h2 {
   font-size: 2.5rem;
   font-weight: 400;
