@@ -31,15 +31,13 @@ a {
 
 .swiper {
   width: 100%;
-  height: 400px;
-  /* margin-top: -1rem; */
+  height: 250px;
 }
 
 .slider-unggulan {
-  height: 330px;
-  /* border: 1px solid #234; */
+  height: 180px;
   border-radius: 10px;
-  width: 100%;
+  width: 99%;
   display: flex;
   align-items: center;
   justify-content: center;
