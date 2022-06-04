@@ -5,7 +5,7 @@ export default function Banner() {
             <div className="left-menu">
                 <div className="heading-banner">
                     <h2>Terbitkan Karya Terbaikmu Sekarang!</h2>
-                    <p>Tunjukan Karya Terbaik Kamu Kepada Dunia Dan Tingkatan Penghasilan Bersama 1000+ Komunitas Publisher Kami Diseluruh Wilayah Indonesia.</p>
+                    <p>Terbitkan Karya Terbaik Kamu Dan Tingkatan Penghasilan Bersama 1000+ Komunitas Publisher Kami Diseluruh Wilayah Indonesia.</p>
                 </div>
                 <button className="button-banner">Mendaftar Menjadi Penulis</button>
             </div>
