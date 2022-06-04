@@ -12,7 +12,7 @@ export default function preview() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div class="preview">
+      <div className="preview">
         <Books />
       </div>
       <Footer />
