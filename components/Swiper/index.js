@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay, Navigation } from "swiper";
 import Image1 from './images/berkunjung.png';
 import Image2 from './images/bagaimana.png';
 import Image3 from './images/laut.png';
@@ -17,8 +17,13 @@ export default function App() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
+        centeredSlides={false}
         pagination={{
           clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
         breakpoints={{
           640: {
@@ -34,7 +39,8 @@ export default function App() {
             spaceBetween: 30,
           },
         }}
-        modules={[Pagination]}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
         className=" swiper mySwiper"
       >
         <SwiperSlide>
