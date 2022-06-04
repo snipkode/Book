@@ -10,6 +10,7 @@ import Image4 from './images/antologi.png';
 import Image5 from './images/nelayan.png';
 import Image6 from './images/narkoba.png';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function App() {
   return (
@@ -44,70 +45,82 @@ export default function App() {
         className=" swiper mySwiper"
       >
         <SwiperSlide>
-          <div className="slider-unggulan">
-            <Image className="image-rounded" alt="thumb-image" src={Image1} layout="intrinsic" objectFit="cover" width={300} height={410} />
-            <div className="info">
-              <div className="title-book">Berkunjung Ke Taman Buah</div>
-              <div className="author-book">
-                <small>Bimo Sakti</small>
+          <Link href="/books/preview">
+            <div className="slider-unggulan">
+              <Image className="image-rounded" alt="thumb-image" src={Image1} layout="intrinsic" objectFit="cover" width={300} height={410} />
+              <div className="info">
+                <div className="title-book">Berkunjung Ke Taman Buah</div>
+                <div className="author-book">
+                  <small>Bimo Sakti</small>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-unggulan">
-            <Image className="image-rounded" alt="thumb-image" src={Image2} layout="intrinsic" objectFit="cover" width={300} height={410} />
-            <div className="info">
-              <div className="title-book">Bagaimana Manusia Dapat Hidup Bahagia Lahir Batin</div>
-              <div className="author-book">
-                <small>S. Kusumopradoto</small>
+          <Link href="/books/preview">
+            <div className="slider-unggulan">
+              <Image className="image-rounded" alt="thumb-image" src={Image2} layout="intrinsic" objectFit="cover" width={300} height={410} />
+              <div className="info">
+                <div className="title-book">Bagaimana Manusia Dapat Hidup Bahagia Lahir Batin</div>
+                <div className="author-book">
+                  <small>S. Kusumopradoto</small>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-unggulan">
-            <Image className="image-rounded" alt="thumb-image" src={Image3} layout="intrinsic" objectFit="cover" width={300} height={410} />
-            <div className="info">
-              <div className="title-book">Ayo Tengok Lautku</div>
-              <div className="author-book">
-                <small>Rahmawati, SH.</small>
+          <Link href="/books/preview">
+            <div className="slider-unggulan">
+              <Image className="image-rounded" alt="thumb-image" src={Image3} layout="intrinsic" objectFit="cover" width={300} height={410} />
+              <div className="info">
+                <div className="title-book">Ayo Tengok Lautku</div>
+                <div className="author-book">
+                  <small>Rahmawati, SH.</small>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-unggulan">
-            <Image className="image-rounded" alt="thumb-image" src={Image4} layout="intrinsic" objectFit="cover" width={300} height={410} />
-            <div className="info">
-              <div className="title-book">Antologi Studi Agama dan Pendidikan</div>
-              <div className="author-book">
-                <small>Prof. H. Abdurrahman Mas'ud, Ph.D.</small>
+          <Link href="/books/preview">
+            <div className="slider-unggulan">
+              <Image className="image-rounded" alt="thumb-image" src={Image4} layout="intrinsic" objectFit="cover" width={300} height={410} />
+              <div className="info">
+                <div className="title-book">Antologi Studi Agama dan Pendidikan</div>
+                <div className="author-book">
+                  <small>Prof. H. Abdurrahman Mas'ud, Ph.D.</small>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-unggulan">
-            <Image className="image-rounded" alt="thumb-image" src={Image5} layout="intrinsic" objectFit="cover" width={300} height={410} />
-            <div className="info">
-              <div className="title-book">Aku Ingin Menjadi Nelayan Kaya</div>
-              <div className="author-book">
-                <small>Rahadiyanti Aditya</small>
+          <Link href="/books/preview">
+            <div className="slider-unggulan">
+              <Image className="image-rounded" alt="thumb-image" src={Image5} layout="intrinsic" objectFit="cover" width={300} height={410} />
+              <div className="info">
+                <div className="title-book">Aku Ingin Menjadi Nelayan Kaya</div>
+                <div className="author-book">
+                  <small>Rahadiyanti Aditya</small>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slider-unggulan">
-            <Image className="image-rounded" alt="thumb-image" src={Image6} layout="intrinsic" objectFit="cover" width={300} height={410} />
-            <div className="info">
-              <div className="title-book">Ada Apa Dengan Narkoba</div>
-              <div className="author-book">
-                <small>Winarto, S.S.</small>
+          <Link href="/books/preview">
+            <div className="slider-unggulan">
+              <Image className="image-rounded" alt="thumb-image" src={Image6} layout="intrinsic" objectFit="cover" width={300} height={410} />
+              <div className="info">
+                <div className="title-book">Ada Apa Dengan Narkoba</div>
+                <div className="author-book">
+                  <small>Winarto, S.S.</small>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </>
