@@ -77,6 +77,19 @@ a {
   align-items: center;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: white;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 9999;
+  background: white;
+}
 .swiper-slide img {
   display: block;
   width: 100%;
