@@ -84,7 +84,7 @@
 
 .form-input > input {
     padding: 10px 15px;
-    border: 1px solid #f4e8d7;
+    border: 1px solid rgba(4, 4, 43, 0.44);
     border-radius: 20px;
     width: 100%;
     font-weight: 300;
@@ -96,7 +96,7 @@
 .form-input > input:focus {
     padding: 10px 15px;
     outline: none;
-    border: 1px solid #dacdbc;
+    border: 1px solid rgba(4, 4, 43, 0.44);
     border-radius: 20px;
     width: 100%;
 }

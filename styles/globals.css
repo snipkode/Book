@@ -2,7 +2,7 @@
   --secondary: rgba(51, 168, 159, 1);
   --primary: #0c1334;
   --sidebar: rgba(251, 251, 251, 1);
-  --heading: #6f5532;
+  --heading: #0c1334;
 }
 
 html,
@@ -46,7 +46,7 @@ a {
   height: 460px;
 }
 .logo {
-  font-weight: 600;
+  font-weight: 350;
   text-transform: uppercase;
 }
 
