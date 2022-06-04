@@ -1,10 +1,21 @@
 import Books from '../../components/Books';
-import Layout from '../../components/Layout'
+import Header from '../../components/Header';
+import Head from 'next/head';
+import Footer from '../../components/Footer';
 
 export default function preview() {
   return (
-    <Layout title="Books Preview | Starlova Publishing">
-        <Books/>
-    </Layout>
+    <>
+      <Head>
+        <title>Book Preview | Starlova Publishing</title>
+        <meta name="description" content="Starlova Publishing Platfrom" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <div class="preview">
+        <Books />
+      </div>
+      <Footer />
+    </>
   )
 }
