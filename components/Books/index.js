@@ -2,7 +2,6 @@ import HTMLFlipBook from "react-pageflip";
 import { forwardRef, useState, useEffect } from "react";
 import styles from './book.module.css';
 import Image from "next/image";
-import MyImage from './image.webp';
 
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({

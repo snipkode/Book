@@ -1,4 +1,4 @@
-import StandImage from './stand.png';
+import StandImage from './images/stand.png';
 import Book1 from './images/book-1.png';
 import Book2 from './images/book-2.png';
 import Book3 from './images/book-3.png';

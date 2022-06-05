@@ -1,10 +1,9 @@
 
 import Layout from '../components/Layout'
-import Swiper from '../components/Swiper'
+import SwiperProduct from '../components/Swiper'
 import Trending from '../components/Trending'
-import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function Home({ books }) {
   return (
     <Layout title="Home | Starlova Publishing">
       <div className="content bg-page-80">
@@ -12,7 +11,7 @@ export default function Home() {
           <div className="section">
             <h4>Premium Books</h4>
           </div>
-          <Swiper />
+          <SwiperProduct data={books} />
         </div>
         <div className="section-content">
           <div className="section">
@@ -23,4 +22,12 @@ export default function Home() {
       </div>
     </Layout>
   )
+}
+
+export async function getServerSideProps() {
+  const response = await fetch('http://localhost:3000/api/books');
+  const data = await response.json();
+  return {
+    props: { books: data },
+  };
 }
