@@ -70,26 +70,26 @@
 }
 
 .form-input > input::placeholder {
-    font-weight: 300;
-    /* color: var(--heading); */
-    color: rgba(4, 4, 43, 0.44);
+    font-weight: 200;
+    color: rgba(4, 4, 43, 0.24);
 }
 
 .form-input > input {
-    padding: 8px 15px;
-    border: 1px solid var(--secondary);
-    border-radius: 15px;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    border-radius: 14px;
     width: 100%;
-    font-weight: 300;
+    font-weight: 200;
     justify-self: flex-end;
     margin-left: 1.5rem;
     flex: 1;
 }
 
 .form-input > input:focus {
-    padding: 8px 15px;
+    padding: 8px 20px;
     outline: none;
-    border: 1px solid var(--hover);
-    border-radius: 15px;
+    border: 1px solid var(--secondary);
+    border-radius: 14px;
     width: 100%;
+    color: rgba(4, 4, 43, 0.74);
 }
