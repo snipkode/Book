@@ -17,7 +17,7 @@ export default function Home({ books }) {
           <div className="section">
             <h4>Trending Books</h4>
           </div>
-          <Trending />
+          <Trending data={books} />
         </div>
       </div>
     </Layout>
