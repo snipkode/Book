@@ -29,6 +29,12 @@ a {
   color: var(--active);
 }
 
+.logo > h2 {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 350;
+}
+
 .banner {
   display: flex;
   flex-direction: row;
