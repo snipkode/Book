@@ -1,10 +1,12 @@
 :root {
-  --secondary:rgb(15 123 106);
-  --primary: rgb(1 138 114);
+  --secondary: rgb(120, 10, 120);
+  --primary: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
   --sidebar: rgba(251, 251, 251, 1);
-  --active: rgb(0 231 191);
-  --hover: rgb(12 164 140);
+  --active: rgb(254 221 255);
+  --hover: #a24aa7;
   --text-heading: rgb(0 80 66);
+  --product-card: rgb(10 23 61);
+
 }
 
 html,
@@ -12,7 +14,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
 }
 
 
@@ -29,10 +30,16 @@ a {
   color: var(--active);
 }
 
-.logo > h2 {
+.logo>h2 {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 350;
+}
+.logo > a {
+  background: #2fa08b;
+  border-radius: 15px 0px 15px;
+  padding: 10px 1rem;
+  border-top: 2px solid white;
 }
 
 .banner {
@@ -45,11 +52,11 @@ a {
   align-items: center;
 }
 
-.banner .left-menu  {
+.banner .left-menu {
   width: 50%;
 }
 
-.banner .right-menu  {
+.banner .right-menu {
   position: relative;
   width: 50%;
 }
@@ -68,15 +75,16 @@ a {
   transform: translateY(72%);
 }
 
-.banner .left-menu .heading-banner > h2 {
+.banner .left-menu .heading-banner>h2 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-heading);
   margin-bottom: 1rem;
 }
-.banner .left-menu .heading-banner > p {
+
+.banner .left-menu .heading-banner>p {
   font-size: 1rem;
-  line-height: 2.5rem;
+  line-height: 1.8rem;
   font-weight: 200;
   color: var(--text-heading);
 }
@@ -87,7 +95,7 @@ a {
   font-size: 0.9rem;
   border: none;
   padding: 0.8rem 1.5rem;
-  border-radius: 5px;
+  border-radius: 10px 0px 10px;
   cursor: pointer;
   font-weight: 200;
 }
@@ -101,15 +109,31 @@ a {
   padding: 0.5rem 2rem;
 }
 
-.section > h4 {
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.section>h4 {
+  color: white;
   font-weight: 330;
   font-size: 1.2rem;
   margin: 1.2rem 0.5rem 0 0;
-} 
+  text-align: center;
+  background: rgb(92, 7, 92);
+  width: 200px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px 0px 10px;
+  opacity: 0.95;
+}
 
 .section-content {
   margin-bottom: 3rem;
   margin-top: 2rem;
+}
+
+.product-card {
+  background-color: white;
 }
 
 .product-card .image-rounded {
@@ -121,30 +145,35 @@ a {
 }
 
 .product-card .info {
+  color: white;
   padding: 0.5rem 0.8rem;
-  border-top: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+  height: 80px;
+  border-top: 2px solid rgb(92, 7, 92);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+  background: rgb(120, 10, 120);
 }
 
 .product-card .info .title-book {
   text-align: left;
-  font-weight: 350;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: inherit;
   line-height: 20px;
 }
 
 .product-card .info .author-book small {
-  font-weight: 250;
-  font-size: 0.8rem;
+  font-size: 12px;
 }
 
 .swiper {
   width: 100%;
   height: 550px;
 }
+
 .logo {
   font-weight: 350;
   text-transform: uppercase;
@@ -186,11 +215,11 @@ header {
   top: 0;
   color: white;
   z-index: 9999;
-  background:var(--primary);
+  background: var(--primary);
 }
 
 .main-bg {
-  /* background: linear-gradient(40deg, rgba(252, 255, 239, 0) -5.57%, #E3F2CD 35.35%, #f4e8d7 62.99%, rgba(255, 247, 220, 0) 100.59%); */
+  /* background-image: url('https://cdn.pixabay.com/photo/2016/01/19/01/42/library-1147815_960_720.jpg?imwidth=1920'); */
 }
 
 footer {
@@ -199,6 +228,7 @@ footer {
   z-index: 9999;
   background: white;
 }
+
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -207,11 +237,11 @@ footer {
 }
 
 .bg-page {
-  background: white;
-  background: linear-gradient(180deg, white 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,0.024247198879551846) 100%);  
+  /* background: white; */
+  /* background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0.024247198879551846) 100%); */
 }
 
 .bg-page-80 {
   background: white;
-  background: linear-gradient(180deg, white 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0.024247198879551846) 100%);  
+  background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0.024247198879551846) 100%);
 }

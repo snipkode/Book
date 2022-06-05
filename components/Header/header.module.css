@@ -1,4 +1,6 @@
 .header-menu {
+    background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,7 +35,7 @@
 
 .header-menu > ul > li > button {
    color: white;
-   background: var(--secondary);
+   background: #c55dcb;
    cursor: pointer;
    border-radius: 3px;
    border: none;
@@ -66,7 +68,7 @@
 
 .form-input > input {
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 1px solid white;
     border-radius: 14px;
     width: 100%;
     font-weight: 200;
@@ -78,7 +80,7 @@
 .form-input > input:focus {
     padding: 8px 20px;
     outline: none;
-    border: 1px solid var(--secondary);
+    border: 1px solid white;
     border-radius: 14px;
     width: 100%;
     color: rgba(4, 4, 43, 0.74);

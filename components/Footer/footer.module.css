@@ -2,12 +2,12 @@
 .footer {
     height: 60px;
     text-align: center;
-    background: var(--secondary);
-    color: white;
+    background-image: var(--primary);
+    color: var(--active);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     position: sticky;
     position: -webkit-sticky;

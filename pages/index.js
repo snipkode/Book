@@ -6,7 +6,7 @@ import Trending from '../components/Trending'
 export default function Home({ books }) {
   return (
     <Layout title="Home | Starlova Publishing">
-      <div className="content bg-page-80">
+      <div className="content bg-page">
         <div className="section-content">
           <div className="section">
             <h4>Premium Books</h4>
