@@ -1,8 +1,10 @@
 :root {
-  --secondary: rgba(51, 168, 159, 1);
-  --primary: #0c1334;
+  --secondary:rgb(15 123 106);
+  --primary: rgb(1 138 114);
   --sidebar: rgba(251, 251, 251, 1);
-  --heading: #0c1334;
+  --active: rgb(0 207 171);
+  --hover: rgb(12 164 140);
+  --text-heading: rgb(0 80 66);
 }
 
 html,
@@ -26,7 +28,7 @@ a {
 }
 
 .active {
-  color: var(--secondary);
+  color: var(--active);
 }
 
 .banner {
@@ -64,29 +66,30 @@ a {
 
 .banner .left-menu .heading-banner > h2 {
   font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--primary);
+  font-weight: 600;
+  color: var(--text-heading);
   margin-bottom: 1rem;
 }
 .banner .left-menu .heading-banner > p {
   font-size: 1rem;
   line-height: 2.5rem;
   font-weight: 200;
+  color: var(--text-heading);
 }
 
 .banner button.button-banner {
   background-color: var(--secondary);
   color: white;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .banner .button-banner:hover {
-  background-color: var(--primary)
+  background-color: var(--hover)
 }
 
 .content {
@@ -177,8 +180,9 @@ a {
 header {
   position: sticky;
   top: 0;
+  color: white;
   z-index: 9999;
-  background:white;
+  background:var(--primary);
 }
 
 .main-bg {
