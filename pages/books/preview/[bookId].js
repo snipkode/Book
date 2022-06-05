@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Footer from '../../../components/Footer';
 import { useRouter } from 'next/router';
 
-export default function preview() {
+export default function Preview() {
   const router = useRouter();
   const { bookId } = router.query;
   return (
