@@ -40,6 +40,11 @@ a {
   border-radius: 15px 0px 15px;
   padding: 10px 1rem;
   border-top: 2px solid white;
+  cursor: pointer;
+}
+
+span img {
+  cursor: pointer;
 }
 
 .banner {

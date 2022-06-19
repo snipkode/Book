@@ -2,7 +2,7 @@ import styles from './header.module.css';
 import Link from 'next/Link';
 import { useRouter } from "next/router";
 import Image from 'next/image';
-import LogoImage from './image/logo-lg.png';
+// import LogoImage from './image/logo-lg.png';
 
 export default function Header() {
     const router = useRouter();
@@ -10,10 +10,9 @@ export default function Header() {
         <header>
             <div className={styles["header-menu"]}>
                 <div className={["logo"]}>
-                    {/* <Link href="/">
-                        
-                    </Link> */}
-                    <Image src={LogoImage} width={220} height={50} alt={"Logo Starlova"} objectFit="fixed"/>
+                    <Link href="/">
+                        <Image src={"http://localhost:3000/images/logo-lg.png"} width={220} height={50} alt={"Logo Starlova"} objectFit="fixed"/>
+                    </Link>
                 </div>
                 <div className={styles["form-input"]}>
                     <input type="text" placeholder="Cari..." />
