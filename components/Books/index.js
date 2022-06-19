@@ -1,5 +1,5 @@
 import HTMLFlipBook from "react-pageflip";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './book.module.css';
 import Image from "next/image";
 
@@ -29,28 +29,27 @@ function useWindowSize() {
     return windowSize;
 }
 
-const Page = React.forwardRef((props, ref) => (
+const Page = React.forwardRef((props, ref) =>(
     <div className={styles['flip-book']} ref={ref}>
-        <div className={styles.page}>
-            <div className={styles['page-content']}>
-                <div className={styles['page-header']}>
-                    Page Header
-                </div>
-                <div className={styles['page-text']}>
-                    {props.children}
-                </div>
-                <div className={styles['page-footer']}>
-                    <p>Halaman {props.number}</p>
-                </div>
+    <div className={styles.page}>
+        <div className={styles['page-content']}>
+            <div className={styles['page-header']}>
+                Page Header
+            </div>
+            <div className={styles['page-text']} >
+                {props.children}
+            </div>
+            <div className={styles['page-footer']}>
+                <p>Halaman {props.number}</p>
             </div>
         </div>
     </div>
-));
+</div>
+))
 
 
 
-export default function Books(props) {
-
+export default function Books() {
     const size = useWindowSize();
     return (
         <HTMLFlipBook width={size.width < 968 ? size.width : size.width / 2} height={size.height < 968 ? size.height : '100vh'} size="fixed"
@@ -59,7 +58,8 @@ export default function Books(props) {
             minHeight={size.height}
             maxHeight={size.height}
             maxShadowOpacity={0.5}
-            showCover={false}>
+            showCover={false}
+        >
             <Page number="1">
                 <div className={styles['page-image']}>
                     <Image src="https://cdn.pixabay.com/photo/2015/09/05/21/51/reading-925589_960_720.jpg" height={200} width={500} layout="responsive" alt={"image preview book page"} />
