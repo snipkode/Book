@@ -5,20 +5,28 @@
 
 .page {
 	padding: 20px;
-	background-color: #fdfaf7;
-	color: #6f5532;
+	background-color: #fff;
+	color: #234;
 	border: solid 1px #ede9e5;
 	overflow: hidden;
+	font-family: 'Open Sans';
 }
+
+
 
 .page .page-content {
 	width: 100%;
     height: 95vh;
 	display: flex;
+	font-size: 1.2rem;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: stretch;
     
+}
+
+.page .page-header {
+	color: #8a7353;
 }
 
 .page .page-content .page-header {
@@ -53,8 +61,8 @@
 	height: 30px;
 	border-top: solid 1px #f4e8d7;
 	font-size: 80%;
-	background-color: #fdfaf7;
-	color: #998466;
+	background-color: #fff;
+	color: #8a7353;
 }
 
 .page.--left {
