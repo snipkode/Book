@@ -1,5 +1,5 @@
 import HTMLFlipBook from "react-pageflip";
-import { forwardRef, useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from './book.module.css';
 import Image from "next/image";
 
@@ -29,25 +29,23 @@ function useWindowSize() {
     return windowSize;
 }
 
-const Page = forwardRef((props, ref) => {
-    return (
-        <div className={styles['flip-book']} ref={ref}>
-            <div className={styles.page}>
-                <div className={styles['page-content']}>
-                    <div className={styles['page-header']}>
-                        Page Header
-                    </div>
-                    <div className={styles['page-text']}>
-                        {props.children}
-                    </div>
-                    <div className={styles['page-footer']}>
-                        <p>Halaman {props.number}</p>
-                    </div>
+const Page = React.forwardRef((props, ref) => (
+    <div className={styles['flip-book']} ref={ref}>
+        <div className={styles.page}>
+            <div className={styles['page-content']}>
+                <div className={styles['page-header']}>
+                    Page Header
+                </div>
+                <div className={styles['page-text']}>
+                    {props.children}
+                </div>
+                <div className={styles['page-footer']}>
+                    <p>Halaman {props.number}</p>
                 </div>
             </div>
         </div>
-    );
-});
+    </div>
+));
 
 
 

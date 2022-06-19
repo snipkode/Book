@@ -6,11 +6,11 @@ import { useRouter } from 'next/router';
 
 export default function Preview() {
   const router = useRouter();
-  const { bookId } = router.query;
+  const { id } = router.query;
   return (
     <>
       <Head>
-        <title>Book Preview {bookId} | Starlova Publishing </title>
+        <title>Book Preview {id} | Starlova Publishing </title>
         <meta name="description" content="Starlova Publishing Platfrom" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

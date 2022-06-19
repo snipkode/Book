@@ -24,7 +24,7 @@ export default function Home({ books }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const response = await fetch('http://localhost:3000/api/books');
   const data = await response.json();
   return {
